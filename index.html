@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Smart Image Enhancement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="logo">LUMINA</div>
+        <div class="status-badge" id="api-status">Connecting to Hub...</div>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Smart Image <span>Enhancement</span></h1>
+            <p>Advanced preprocessing pipeline: Cleaning, CLAHE Enhancement, and Feature Extraction powered by AI.</p>
+        </header>
+
+        <section class="upload-container">
+            <div class="drop-zone" id="drop-zone">
+                <div class="upload-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <h3>Drag & Drop Image</h3>
+                <p>or click to browse from files</p>
+                <input type="file" id="file-input" accept="image/*" hidden>
+            </div>
+            
+            <div id="loading-overlay" class="hidden">
+                <div class="loader"></div>
+                <p>Processing Image Pipeline...</p>
+            </div>
+        </section>
+
+        <section class="results-section hidden" id="results-section">
+            <div class="section-header">
+                <h2>Analysis Results</h2>
+                <button id="reset-btn" class="secondary-btn">New Enhancement</button>
+            </div>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="image-wrapper">
+                        <img id="res-resized" src="" alt="Resized">
+                    </div>
+                    <div class="card-info">
+                        <h3>Resized Image</h3>
+                        <span>Standardized dimensions</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="image-wrapper">
+                        <img id="res-gray" src="" alt="Grayscale">
+                    </div>
+                    <div class="card-info">
+                        <h3>Grayscale</h3>
+                        <span>Luminance conversion</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="image-wrapper">
+                        <img id="res-denoised" src="" alt="Denoised">
+                    </div>
+                    <div class="card-info">
+                        <h3>Denoised</h3>
+                        <span>Gaussian smoothing</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="image-wrapper">
+                        <img id="res-noise-map" src="" alt="Noise Map">
+                    </div>
+                    <div class="card-info">
+                        <h3>Noise Removed</h3>
+                        <span>Difference visualization</span>
+                    </div>
+                </div>
+                <div class="result-card highlight">
+                    <div class="image-wrapper">
+                        <img id="res-enhanced" src="" alt="Enhanced">
+                    </div>
+                    <div class="card-info">
+                        <h3>Enhanced (CLAHE)</h3>
+                        <span>Local contrast optimization</span>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="image-wrapper">
+                        <img id="res-edges" src="" alt="Edges">
+                    </div>
+                    <div class="card-info">
+                        <h3>Edge Detection</h3>
+                        <span>Canny feature extraction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lumina AI | Powered by Gradio Hub</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
