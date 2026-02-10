@@ -3,8 +3,9 @@
 A multi-stage image processing pipeline designed for automated cleaning, enhancement, and feature extraction. This system leverages advanced OpenCV techniques to transform raw, noisy images into high-contrast, feature-rich data.
 
 ## 🚀 Live Demo
-Experience the system live on Hugging Face Spaces:
-**[Gradio Hub: Image Preprocessing](https://huggingface.co/spaces/Ashvitta/Image_preprocessing)**
+Experience the system live:
+- **[Web Application (GitHub Pages)](https://ashvittas.github.io/Smart-Image-Enhancement-Analysis-System/)**
+- **[Gradio Hub (Backend API)](https://huggingface.co/spaces/Ashvitta/Image_preprocessing)**
 
 ---
 
