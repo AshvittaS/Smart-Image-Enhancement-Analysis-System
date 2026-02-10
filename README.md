@@ -7,10 +7,12 @@ Experience the system live:
 - **[Web Application (GitHub Pages)](https://ashvittas.github.io/Smart-Image-Enhancement-Analysis-System/)**
 - **[Gradio Hub (Backend API)](https://huggingface.co/spaces/Ashvitta/Image_preprocessing)**
 
-![Lumina Hero Section](C:\Users\Ashvitta\.gemini\antigravity\brain\ea56325b-024e-4fa0-9255-332d1dc74792\media__1770705297900.png)
+![Lumina Hero Section]<img width="1812" height="931" alt="image" src="https://github.com/user-attachments/assets/8e3b14d4-5920-4ed9-b757-3c4cac094f7c" />
+
 *Modern dark-themed interface with glassmorphism.*
 
-![Analysis Pipeline Results](C:\Users\Ashvitta\.gemini\antigravity\brain\ea56325b-024e-4fa0-9255-332d1dc74792\media__1770705330322.png)
+![Analysis Pipeline Results]<img width="1542" height="862" alt="page2" src="https://github.com/user-attachments/assets/eca4cb68-05c4-44c4-b497-55b89f1accc8" />
+
 *Detailed 6-stage image analysis pipeline results.*
 
 ---
